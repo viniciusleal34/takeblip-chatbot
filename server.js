@@ -18,4 +18,4 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(routes);
 
-app.listen(3378, () => console.log("back On 3378"));
+app.listen(process.env.PORT || 3000);
